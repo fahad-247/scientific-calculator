@@ -1,107 +1,138 @@
 /* styles.css */
 body {
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  margin-top: 50px;
-}
-
-.calculator {
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#display {
-  font-size: 40px;
-  text-align: right;
-  background-color: #f1f1f1;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-button {
-  font-size: 22px;
-  padding: 20px;
-  border-radius: 8px;
-  color: black;
-  transition: all 0.3s ease;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:hover {
-  background-color: #007bff;
-  color: white;
-}
-
-.card {
-  border-radius: 15px;
-}
-
-.card-body {
-  padding: 30px;
-}
-
-.btn-block {
-  margin-bottom: 15px;
-  width: 100%;
-}
-
-.row {
-  margin-bottom: 10px;
-}
-
-/* For better layout and touch support */
-@media (max-width: 576px) {
-  .col-3 {
-    padding: 5px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
-
+  
+  .container {
+    margin-top: 50px;
+  }
+  
   .calculator {
-    padding: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Added max-width for responsive behavior */
+    margin: auto;
   }
-
+  
   #display {
-    font-size: 30px;
+    font-size: 40px;
+    text-align: right;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px; /* Increased padding for better display visibility */
+    margin-bottom: 20px;
+    color: #333;
+    box-sizing: border-box; /* Ensure padding does not affect width */
   }
-
+  
   button {
-    font-size: 18px;
-    padding: 15px;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    transition: all 0.3s ease;
+    border: none; /* Remove button border */
+    width: 100%; /* Full width for buttons */
   }
-}
-
-/* Special button styles for scientific functions */
-button.btn-primary {
-  background-color: #28a745;
-  border-color: #28a745;
-}
-
-button.btn-secondary {
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-}
-
-button.btn-secondary:hover {
-  background-color: #e2e6ea;
-}
-
-button.btn-primary:hover {
-  background-color: #218838;
-  border-color: #1e7e34;
-}
-
-button:active {
-  transform: scale(0.98);
-}
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  .card {
+    border-radius: 15px;
+    background-color: #fff;
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .btn-block {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .row {
+    margin-bottom: 10px;
+  }
+  
+  button.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  button.btn-secondary {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #e2e6ea;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  /* For better layout and touch support */
+  @media (max-width: 576px) {
+    .col-3 {
+      padding: 5px;
+    }
+  
+    .calculator {
+      padding: 20px;
+    }
+  
+    #display {
+      font-size: 30px;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 15px;
+    }
+  }
+  
+  /* Make buttons inside the row consistent */
+  .calculator .row .col-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  /* Special button styles for scientific functions */
+  button.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  button.btn-secondary {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #e2e6ea;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
