@@ -32,6 +32,7 @@ button {
   font-size: 22px;
   padding: 20px;
   border-radius: 8px;
+  color: black;
   transition: all 0.3s ease;
 }
 
